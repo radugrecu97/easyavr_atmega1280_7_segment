@@ -20,4 +20,16 @@ The display is updated periodically with the use of a timer interrupt. To tune t
 
 ![Prescaler_formula](assets/Prescaler_formula.PNG)
 
+Where:
+N - prescaler
+OCR - the value that the timer will count to and once reached, will trigger an interrupt
+fclk - CPU frequency (which is 7372800 for ATmega1280)
+
+### Pushing data
+
+The following timing diagram can be used as a reference for implementing the SPI.
+Note that the Master Reset (MR) is not used at all as it wasn't deemed necessary but it is held high as it's active low.
+
+![wavedrom](assets/wavedrom.png)
+
 ![Datasheet_7_segment](assets/Datasheet_7_segment.PNG)
