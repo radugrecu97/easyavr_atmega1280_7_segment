@@ -28,7 +28,7 @@ fclk - CPU frequency (which is 7372800 for ATmega1280)
 ### Pushing data
 
 The following timing diagram can be used as a reference for implementing the SPI.
-Note that the Master Reset (MR) is not used at all as it wasn't deemed necessary. 
+Note that the Master Reset (MR) is not used at all as it wasn't deemed necessary but it is held high as it's active low.
 
 ![wavedrom](assets/wavedrom.png)
 
